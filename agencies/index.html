@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Influence Directory</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Indie+Flower|Permanent+Marker" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+   <link rel="icon" href="id-icon-red.png">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css" />
+  
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97931545-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97931545-7');
+</script>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  
+    <header>
+      <div class="top-nav" id="myTopnav">
+          <a href="http://influence.directory/" class="is-logo"><img src="logo.png" width=150 ></a>
+          <nav>
+          <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()">&#9776;</a>
+          <a class="cursive" href="http://influence.directory/v4/agencies" class="active">AGENCIES</a>
+          <a class="cursive" href="http://influence.directory/v4/brands">BRANDS</a>
+          <a class="cursive" href="http://influence.directory/v4/news">NEWS</a>
+          <a class="cursive" href="http://influence.directory/v4/tools">TOOLS</a>
+          <a class="cursive" href="http://influence.directory/v4/events">EVENTS</a>
+          <a class="cursive" href="http://influence.director/v4/campaigns">CAMPAIGNS</a>
+          <a class="cursive" href="http://influence.director/v4/100/">INFLUENCE 100</a>
+          <!--add: class="active" when needed-->
+           </nav>
+
+    </header>
+
+    <div class="content-wrapper">
+
+      <aside>
+           <div id="addagency"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2D-9u0rj8o4eTTdqG_QNDSclZfalsn-bOnhKtD1IaNGW9Ig/viewform?usp=sf_link" target="_blank">Add an Agency</a></div>        
+        <div id="clear-all"></div>
+        
+        <section class="facet-wrapper">
+          <div class="facet-category-country" class="facet">Filter By Country:</div>
+          <div id="country"></div>
+        
+      </aside>
+    
+        <div class="search-wrapper">
+        <div class="input-group">
+        <input type="text" class="form-control" id="q" />
+        <span class="input-group-btn">
+        <button class="btn btn-default"><i class="fa fa-search"></i></button>
+        </span>
+        </div>
+        </div>
+
+      <div class="results-wrapper">
+        <section id="results-topbar">
+          <div id="stats" class="text-muted"></div>
+        </section>
+        <main id="hits"></main>
+        <section id="pagination"></section>
+      </div>
+    </div>
+  </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"ce8a5e698082549514fb4fde2","lid":"061337a1d3"}) })</script>
+
+</body>
+</html>
