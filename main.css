@@ -152,29 +152,39 @@ h3 a {
 h1 a:hover,
 h2 a:hover,
 h3 a:hover {
-    color: #02baab
+    color: #333153;
+
 }
 
 h1 {
-  color:#000;
-    font-size: 33px;
-    font-weight: 500;
-    line-height: 1.3em;
-    margin: 1.0em 0 .1em 0;
-    text-align: center;
+  color:white;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1em;
+    margin: .5em 0 0 0;
+    text-align: left;
+     background-color: #333153;
 }
 
 h2 {
-    font-size: 22px;
-    font-weight: 400;
-    color: #d3d6dd;
+    font-size: 25px;
+    font-weight: 800;
+    color: #f84544;
+    margin: 10px 0 0 0;
+    text-align: left;
+    line-height: 1em;
 }
 
 h3 {
-    font-size: 21px;
-    font-weight: 400;
-    margin: 2em 0 .5em 0;
-    color: #000;
+
+    font-size: 14px;
+    font-weight: 100;
+    color: #f84544;
+    text-align: left;
+    line-height: 1em;
+
+    /* red: #f84544
+    purple: #333153 */
 }
 
 h4 {
@@ -228,11 +238,24 @@ pre {
 margin: 50px}
 
 .hero-wrapper p {
-    color: #555;
+  color: #555;
    text-align: left;
    max-width:700px;
    margin: 20px auto 20px auto;
    line-height: 1.9em
+}
+
+.hit-wrapper {
+   max-width:700px;
+   margin: 0 auto;
+   line-height: 1.9em
+}
+
+.hit-wrapper p {
+  text-align: left;
+    line-height: 1em;
+    margin: 5px 0 10px 0;
+   color: #333153;
 }
 
 .row:before, .row:after{
