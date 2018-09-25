@@ -155,18 +155,17 @@ h3 a {
 h1 a:hover,
 h2 a:hover,
 h3 a:hover {
-    color: #333153;
+    color: #f84544;
 
 }
 
 h1 {
-  color:white;
     font-size: 50px;
     font-weight: 900;
     line-height: 1em;
     margin: .5em 0 0 0;
     text-align: left;
-     background-color: #333153;
+     /* background-color: #333153; */
 }
 
 h2 {
@@ -182,7 +181,7 @@ h3 {
 
     font-size: 14px;
     font-weight: 100;
-    color: #f84544;
+    color: #000;
     text-align: left;
     line-height: 1em;
 
@@ -505,12 +504,6 @@ body>footer nav:hover{
     padding: 20px;
     font-size:20px;
     color: #f84544;
-}
-
-
-a.cursive:hover {
-font-family: 'Caveat', cursive;
-letter-spacing: .2em;
 }
 
 
