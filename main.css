@@ -700,14 +700,14 @@ text-decoration: none}
   }
 
   .hit__inner {
-    padding: 10px;
+    padding: 20px;
   }
 
 
   .hit .product-image {
 
         float: left;
-        margin: 10px;
+        margin: 0 0 10px;
     }
 
   .hit .fa-link {
@@ -735,7 +735,7 @@ text-decoration: none}
 
        }
        .hit .product-title {
-       margin: 10px;
+       margin: 10px 0;
       clear:left;
       font-weight: bold;
       text-transform: uppercase;
@@ -781,8 +781,7 @@ text-decoration: none}
         font-weight: normal;
         font-size: 1.2em;
         color: #111111;
-        margin: 10px;
-        height:120px;
+        margin: 10px 0 20px;
         overflow: auto;
       }
 
@@ -792,7 +791,7 @@ text-decoration: none}
         font-weight: normal;
         font-size: 1.0em;
         color: #111111;
-        margin: 10px;
+        margin: 10px 0;
         overflow: auto;
 
     }
