@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Indie+Flower|Permanent+Marker" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-   <link rel="icon" href="id-icon-red.png">
+   <link rel="icon" href="../id-icon-red.png">
 
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.css" />
-  
-  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link rel="stylesheet" type="text/css" href="../main.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97931545-7"></script>
 <script>
@@ -29,19 +29,19 @@
 </head>
 
 <body>
-  
+
     <header>
       <div class="top-nav" id="myTopnav">
-          <a href="http://influence.directory/" class="is-logo"><img src="logo.png" width=150 ></a>
+          <a href="/" class="is-logo"><img src="../logo.png" width=150 ></a>
+          <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()">menu</a>
           <nav>
-          <a href="javascript:void(0);" class="menu-icon" onclick="menuFunction()">&#9776;</a>
-          <a class="cursive" href="http://influence.directory/v4/agencies" class="active">AGENCIES</a>
-          <a class="cursive" href="http://influence.directory/v4/brands">BRANDS</a>
-          <a class="cursive" href="http://influence.directory/v4/news">NEWS</a>
-          <a class="cursive" href="http://influence.directory/v4/tools">TOOLS</a>
-          <a class="cursive" href="http://influence.directory/v4/events">EVENTS</a>
-          <a class="cursive" href="http://influence.director/v4/campaigns">CAMPAIGNS</a>
-          <a class="cursive" href="http://influence.director/v4/100/">INFLUENCE 100</a>
+          <a class="cursive" href="/agencies" class="active">AGENCIES</a>
+          <a class="cursive" href="/brands">BRANDS</a>
+          <a class="cursive" href="/news">NEWS</a>
+          <a class="cursive" href="/tools">TOOLS</a>
+          <a class="cursive" href="/events">EVENTS</a>
+          <a class="cursive" href="/campaigns">CAMPAIGNS</a>
+          <a class="cursive" href="/100/">INFLUENCE 100</a>
           <!--add: class="active" when needed-->
            </nav>
 
@@ -49,41 +49,42 @@
 
     <div class="content-wrapper">
 
-      <aside>
-           <div id="addagency"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2D-9u0rj8o4eTTdqG_QNDSclZfalsn-bOnhKtD1IaNGW9Ig/viewform?usp=sf_link" target="_blank">Add an Agency</a></div>        
+      <aside class="agencies-sidebar">
+           <div id="addagency"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2D-9u0rj8o4eTTdqG_QNDSclZfalsn-bOnhKtD1IaNGW9Ig/viewform?usp=sf_link" target="_blank">Add an Agency</a></div>
         <div id="clear-all"></div>
-        
+
         <section class="facet-wrapper">
           <div class="facet-category-country" class="facet">Filter By Country:</div>
           <div id="country"></div>
-        
+
       </aside>
-    
-        <div class="search-wrapper">
-        <div class="input-group">
-        <input type="text" class="form-control" id="q" />
-        <span class="input-group-btn">
-        <button class="btn btn-default"><i class="fa fa-search"></i></button>
-        </span>
-        </div>
-        </div>
+
 
       <div class="results-wrapper">
+        <div class="search-wrapper">
+          <div class="input-group">
+            <input type="text" class="form-control" id="q" />
+            <span class="input-group-btn">
+              <button class="btn btn-default"><i class="fa fa-search"></i></button>
+            </span>
+          </div>
+        </div>
         <section id="results-topbar">
           <div id="stats" class="text-muted"></div>
         </section>
         <main id="hits"></main>
-        <section id="pagination"></section>
       </div>
+      <section id="pagination"></section>
     </div>
   </div>
 
-  
+
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch.min.js"></script>
-  
+
 
   <script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
-  <script src="app.js"></script>
+  <script src="../app.js"></script>
+  <script src="search.js"></script>
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"ce8a5e698082549514fb4fde2","lid":"061337a1d3"}) })</script>
 
 </body>
