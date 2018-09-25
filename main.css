@@ -682,6 +682,7 @@ text-decoration: none}
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
   }
 
   .ais-hits--item {
@@ -691,13 +692,9 @@ text-decoration: none}
   .hit {
     background: #fff;
     min-width: 300px;
-    float: left;
-    margin: 20px;
+    margin: 10px;
     border-radius: 5px;
     overflow: hidden;
-   /* border-top: solid 10px #333153;*/
-   /* border-bottom: solid 10px #333153;
-    ;*/
   box-shadow: 0 2px 4px 2px rgba(0,0,0,.05)
 
   }
@@ -716,7 +713,7 @@ text-decoration: none}
   .hit .fa-link {
 
         float: right;
-        margin: 10px ;
+        padding: 10px ;
         text-decoration: none;
         color: #f84544;
        font-size: 2em;
@@ -796,7 +793,6 @@ text-decoration: none}
         font-size: 1.0em;
         color: #111111;
         margin: 10px;
-        height: 70px;
         overflow: auto;
 
     }
