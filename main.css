@@ -56,7 +56,7 @@ body>header nav a:hover
     transition-duration: .3s;
     }
 
-.top-nav .menu-icon {
+.menu-icon {
     display: none;
     text-decoration: none;
     font-size:30px;
@@ -64,24 +64,28 @@ body>header nav a:hover
 }
 
 @media screen and (max-width: 600px) {
-  .top-nav a:not(:first-child) {display: none;}
-  .top-nav a.menu-icon {
+  .top-nav nav {display: none;}
+  .menu-icon {
     float: right;
     display: block;
   }
 }
 @media screen and (max-width: 750px) {
-  .top-nav.responsive {position: relative;}
-  .top-nav.responsive a.menu-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .top-nav.responsive a {
-    float: none;
+  .top-nav.responsive nav {
     display: block;
-    text-align: left;
     background-color: #000;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 1em 0;
+  }
+
+  .top-nav.responsive nav a {
+    display: block;
+    width: 100%;
+    padding: 1em;
   }
 }
 article,
