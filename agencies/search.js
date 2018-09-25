@@ -22,19 +22,22 @@ search.addWidget(
 var hitTemplate =
   '<article class="hit">' +
 
+      '<div class="hit__inner">' +
+
         ' <a target="_blank" href="{{cta_url}}"><i class="fa fa-link" aria-hidden="true"></i></a>'
-      +  
-        '<div class="product-image"><a href="https://www.{{url}}" target="_blank"><img src="{{logo_url}}"></a></div>' 
       +
-        '<div class="product-title"><a class="product-title" href=https://www.{{url}} target="_blank">{{name}}</a></div>' 
+        '<div class="product-image"><a href="https://www.{{url}}" target="_blank"><img src="{{logo_url}}"></a></div>'
+      +
+        '<div class="product-title"><a class="product-title" href=https://www.{{url}} target="_blank">{{name}}</a></div>'
       +
         '<div class="product-country">{{country}}</a></div>'
       +
-        '<div class="product-logline">{{logline}}</div>' 
+        '<div class="product-logline">{{logline}}</div>'
       +
-        '<div class="brands"><b>Worked with </b>{{brands}}</div>'    
+        '<div class="brands"><b>Worked with </b>{{brands}}</div>'
+      + '</div>'
       +
-        '<div class="submit"><a class="button" href={{submit}} target="_blank">Write a Review of {{name}}</a></div>'
+      '<div class="submit"><a class="button" href={{submit}} target="_blank">Write a Review of {{name}}</a></div>'
       + '</article>';
 
 var noResultsTemplate =
@@ -59,7 +62,7 @@ search.addWidget(
       empty: noResultsTemplate,
       item: hitTemplate
     }
-    
+
   })
 );
 search.addWidget(
@@ -88,7 +91,7 @@ search.addWidget(
     attributeName: 'country',
     operator: 'or',
     templates: {
-      item: facetTemplateCheckbox 
+      item: facetTemplateCheckbox
     }
   })
 );
