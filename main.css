@@ -63,14 +63,13 @@ body>header nav a:hover
     vertical-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 975px) {
   .top-nav nav {display: none;}
   .menu-icon {
     float: right;
     display: block;
   }
-}
-@media screen and (max-width: 750px) {
+
   .top-nav.responsive nav {
     display: block;
     background-color: #000;
